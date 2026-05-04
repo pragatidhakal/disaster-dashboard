@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Flood",
+    "category": "Hydrological Hazard",
+    "description": "Flood-prone areas based on rainfall, river proximity, drainage, land use, and historical exposure.",
+    "source": "Google Earth Engine and local GIS layers"
+  },
+  {
+    "id": 2,
+    "name": "Landslide",
+    "category": "Geological Hazard",
+    "description": "Landslide-prone areas based on slope, elevation, rainfall, drainage, road proximity, and land cover.",
+    "source": "DEM, rainfall datasets, and local landslide inventory"
+  },
+  {
+    "id": 3,
+    "name": "Rainfall Anomaly",
+    "category": "Meteorological Hazard",
+    "description": "Areas experiencing unusual rainfall compared with historical patterns.",
+    "source": "Google Earth Engine climate datasets"
+  },
+  {
+    "id": 4,
+    "name": "Settlement Exposure",
+    "category": "Exposure Layer",
+    "description": "Settlements, buildings, roads, schools, hospitals, and public infrastructure exposed to hazard zones.",
+    "source": "OpenStreetMap, municipal GIS layers, and field data"
+  }
+]

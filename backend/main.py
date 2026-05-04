@@ -1,10 +1,13 @@
 from fastapi import FastAPI
+from routes.hazards import router as hazards_router
 
 app = FastAPI(
     title="Disaster Dashboard API",
     description="Backend API for Nepal Disaster Risk Intelligence Dashboard",
     version="1.0.0"
 )
+
+app.include_router(hazards_router, prefix="/api", tags=["Hazards"])
 
 @app.get("/")
 def home():
@@ -17,15 +20,4 @@ def health_check():
     return {
         "status": "ok",
         "service": "backend"
-    }
-
-@app.get("/api/hazards")
-def get_hazards():
-    return {
-        "hazards": [
-            "Flood",
-            "Landslide",
-            "Rainfall",
-            "Settlement Exposure"
-        ]
     }
