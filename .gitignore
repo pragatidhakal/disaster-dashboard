@@ -7,7 +7,7 @@ venv/
 # VS Code
 .vscode/
 
-# Node / React
+# React / Node
 node_modules/
 dist/
 build/
